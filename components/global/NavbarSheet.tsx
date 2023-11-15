@@ -19,7 +19,7 @@ function NavbarSheet({}: Props) {
       <SheetTrigger asChild>
         <Button
           variant={"outline"}
-          className="w-[80px] bg-transparent h-[80px]"
+          className="w-[80px] bg-transparent h-[80px] border-none"
         >
           <Menu />
         </Button>
