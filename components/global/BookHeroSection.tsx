@@ -7,6 +7,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
+import { Plus,Minus } from 'lucide-react'
 type Props = {};
 
 const BookHeroSection = (props: Props) => {
@@ -19,7 +20,26 @@ const BookHeroSection = (props: Props) => {
             Guestes
           </Button>
         </PopoverTrigger>
-        <PopoverContent>Place content for the popover here.</PopoverContent>
+        <PopoverContent>
+            <div>
+                <div className="py-4 px-2 flex justify-between items-center">
+                <h4>Adults</h4>
+                <div className="flex gap-4 items-center">
+                    <Button size="icon" variant={"outline"}><Minus/></Button>
+                    <div>6</div>
+                    <Button size="icon" variant={"outline"}><Plus/></Button>
+                </div>
+                </div>
+                <div className="py-4 px-2 flex justify-between items-center">
+                <h4>children</h4>
+                <div className="flex gap-4 items-center">
+                    <Button size="icon" variant={"outline"}><Minus/></Button>
+                    <div>6</div>
+                    <Button size="icon" variant={"outline"}><Plus/></Button>
+                </div>
+                </div>
+            </div>
+        </PopoverContent>
       </Popover>
 
       <Button className="h-full px-12 text-lg">Book</Button>
