@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import NavbarSheet from "./NavbarSheet";
 import ContactPopMenu from "./ContactPopMenu";
+import Image from "next/image";
 
 type Props = {};
 
@@ -16,8 +17,17 @@ const Navbar = (props: Props) => {
             <ContactPopMenu />
           </div>
         </div>
-        <div className="h-full flex-1 flex justify-center items-center text-2xl">
-          <span>L</span>ebledegre
+        <div className="h-full flex-1 flex justify-center items-center text-2xl gap-2">
+          <Image
+            priority
+            src="/icon/logo.svg"
+            height={36}
+            width={36}
+            alt="hotel logo"
+          />
+          <p>
+            <span>L</span>ebledegre
+          </p>
         </div>
         <div className="w-[250px] bg-transparent h-full border-x ">
           <Button
