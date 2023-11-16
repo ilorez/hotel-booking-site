@@ -30,23 +30,23 @@ function NavbarSheet({}: Props) {
       >
         <div className="flex flex-col items-center text-center gap-4 pt-10">
           <div>
-            <h2 className="text-2xl my-10">MENU</h2>
+            <h2 className="text-2xl my-10 cursor-default">MENU</h2>
           </div>
-          <ul className=" flex flex-col gap-6 text-xl">
-            <li>Home</li>
-            <li>Our Rooms</li>
-            <li>Contact</li>
-            <li>About us</li>
+          <ul className=" flex flex-col gap-6 text-xl [&>li]:cursor-pointer">
+            <li className="hover:underline">Home</li>
+            <li className="hover:underline">Our Rooms</li>
+            <li className="hover:underline">Contact</li>
+            <li className="hover:underline">About us</li>
           </ul>
           <div>
-            <ul className="flex gap-2">
-              <li>
+            <ul className="flex gap-2  [&>li]:cursor-pointer">
+              <li className="hover:scale-105">
                 <img src="/icon/ar.png" width={30} alt="france icon"></img>
               </li>
-              <li>
+              <li className="hover:scale-105">
                 <img src="/icon/fr.png" width={30} alt="arabic icon"></img>
               </li>
-              <li>
+              <li className="hover:scale-105">
                 <img src="/icon/eng.png" width={30} alt="english icon"></img>
               </li>
             </ul>
