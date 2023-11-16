@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
           </div>
         </div>
         <div className="h-full flex-1 flex justify-center items-center text-2xl">
-          LOGO
+          <span>L</span>ebledegre
         </div>
         <div className="w-[250px] bg-transparent h-full border-x ">
           <Button
