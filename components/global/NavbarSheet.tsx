@@ -19,7 +19,7 @@ function NavbarSheet({}: Props) {
       <SheetTrigger asChild>
         <Button
           variant={"outline"}
-          className="w-[80px] bg-transparent h-[80px] border-none"
+          className="w-[80px] bg-transparent h-full border-none"
         >
           <Menu />
         </Button>
@@ -30,9 +30,9 @@ function NavbarSheet({}: Props) {
       >
         <div className="flex flex-col items-center text-center gap-4 pt-10">
           <div>
-            <h2 className="text-2xl ">MENU</h2>
+            <h2 className="text-2xl my-10">MENU</h2>
           </div>
-          <ul className=" flex flex-col gap-4 text-xl">
+          <ul className=" flex flex-col gap-6 text-xl">
             <li>Home</li>
             <li>Our Rooms</li>
             <li>Contact</li>
