@@ -19,7 +19,7 @@ function HeroSection({}: Props) {
               Welcome to Lebledegre – Your Gateway to Luxury and Comfort!
             </h1>
             <h3 className="text-xl">
-              {"  "}
+              {" "}
               Book your stay now and elevate your travel experience with
               Lebledegre. Your journey to luxury begins here.
             </h3>
