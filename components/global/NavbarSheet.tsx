@@ -5,11 +5,13 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+  SheetClose
+} from '@/components/ui/sheet';
+import { X } from 'lucide-react';
 
-import { Menu } from "lucide-react";
-import React from "react";
-import { Button } from "../ui/button";
+import { Menu } from 'lucide-react';
+import React from 'react';
+import { Button } from '../ui/button';
 
 type Props = {};
 
@@ -18,17 +20,22 @@ function NavbarSheet({}: Props) {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          variant={"outline"}
+          variant={'outline'}
           className="w-[80px] bg-transparent h-full border-none"
         >
           <Menu />
         </Button>
       </SheetTrigger>
       <SheetContent
-        side={"left"}
-        className="bg-[#EEE7DA] w-[400px] sm:w-[540px]"
+        side={'left'}
+        className="bg-[#EEE7DA] text-gray-700 w-[400px] sm:w-[540px] flex flex-col items-center justify-center"
       >
-        <div className="flex flex-col items-center text-center gap-4 pt-10">
+        <SheetClose asChild>
+          <button>
+            <X size={64} className="hover:scale-105 hover:text-gray-600" />
+          </button>
+        </SheetClose>
+        <div className="flex flex-col items-center text-center gap-4 ">
           <div>
             <h2 className="text-2xl my-10 cursor-default">MENU</h2>
           </div>
