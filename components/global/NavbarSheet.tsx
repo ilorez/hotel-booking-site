@@ -48,9 +48,6 @@ function NavbarSheet({}: Props) {
           <div>
             <ul className="flex gap-2  [&>li]:cursor-pointer">
               <li className="hover:scale-105">
-                <img src="/icon/ar.png" width={30} alt="france icon"></img>
-              </li>
-              <li className="hover:scale-105">
                 <img src="/icon/fr.png" width={30} alt="arabic icon"></img>
               </li>
               <li className="hover:scale-105">

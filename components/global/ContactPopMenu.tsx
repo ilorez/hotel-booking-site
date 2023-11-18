@@ -17,7 +17,7 @@ export default function ContactPopMenu({}: Props) {
       </PopoverTrigger>
       <PopoverContent>
         <ul className="flex flex-col gap-2  [&>li]:cursor-pointer ">
-          <li className="hover:underline ">+212 0000000000</li>
+          <li className="hover:underline ">+212664722488</li>
           <hr />
           <li className="hover:underline ">contactus@led.com</li>
         </ul>

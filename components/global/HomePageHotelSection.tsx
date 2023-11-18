@@ -11,17 +11,17 @@ function HomePageHotelSection({}: Props) {
           <div className="text-lg">The hotel</div>
         </div>
         <h1 className="text-6xl max-w-4xl ">
-          Lebledegre Hotel Where Tranquility Meets the Energy of Marrakech
+          Le Bled de Gre Hotel Where Tranquility Meets the Energy of Marrakech
         </h1>
         <p className="text-lg max-w-5xl ">
           Whether you’re looking for an ideal value hotel or a starting point
-          for exploring the wonderful city of Marrakech, Lebledegre Hotel is the
-          best choice! This pleasant haven of peace enjoys a strategic location
-          just minutes from the city’s main points of interest, and offers a
-          diverse culinary experience with its 3 restaurants: Karma, La Terazza
-          and Saveurs d’Asie. Pamper yourself at our rejuvenating spa, indulge
-          in traditional Moroccan charm with a contemporary touch, and relish
-          the warm hospitality of our experienced team dedicated to your
+          for exploring the wonderful city of Marrakech, Le Bled de Gre Hotel is
+          the best choice! This pleasant haven of peace enjoys a strategic
+          location just minutes from the city’s main points of interest, and
+          offers a diverse culinary experience with its 3 restaurants: Karma, La
+          Terazza and Saveurs d’Asie. Pamper yourself at our rejuvenating spa,
+          indulge in traditional Moroccan charm with a contemporary touch, and
+          relish the warm hospitality of our experienced team dedicated to your
           satisfaction.
         </p>
       </div>
@@ -34,10 +34,10 @@ function HomePageHotelSection({}: Props) {
             className="absolute bottom-[-30%] right-[-2rem]  "
           />
           <img
-            src="https://hotel-amani.com/wp-content/uploads/elementor/thumbs/MOROCCO-MARRAKECH-HOTEL-AMANI-POOL-WATER-e1666775815408-q96carjq408wioi56nasjnyeb23adhrb0kfwbqy0kw.jpg"
+            src="/images/greenView2.jpg"
             alt=""
             width={500}
-            className="relative z-1"
+            className="relative z-1 "
           />
         </div>
       </div>
