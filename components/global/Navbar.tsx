@@ -9,8 +9,8 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="border-b h-[80px] p-[0.1rem] z-50 bg-[#0002] fixed w-full top-0 left-0">
-      <div className="container h-full flex text-white mx-auto">
+    <div className="border-b h-[80px] p-[0.1rem] z-50 bg-[#EEE7DAEE] fixed w-full top-0 left-0">
+      <div className="container h-full flex text-gray-900 mx-auto">
         <div className="w-[250px] flex h-full border-x">
           <NavbarSheet />
           <div className="h-full flex-1 flex justify-center items-center border-l text-lg">

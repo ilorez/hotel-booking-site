@@ -15,7 +15,7 @@ function HeroSection({}: Props) {
       <div className="w-full  text-white h-full bg-[#0006] pt-[80px] ">
         <div className="container mx-auto flex items-center h-full">
           <div className="flex-1 space-y-3 drop-shadow-xl">
-            <h1 className="text-4xl">
+            <h1 className="text-7xl">
               Welcome to Lebledegre – Your Gateway to Luxury and Comfort!
             </h1>
             <h3 className="text-xl">
