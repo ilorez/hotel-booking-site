@@ -26,7 +26,7 @@ function NavbarSheet({}: Props) {
       </SheetTrigger>
       <SheetContent
         side={"left"}
-        className="bg-yellow-100 w-[400px] sm:w-[540px]"
+        className="bg-[#EEE7DA] w-[400px] sm:w-[540px]"
       >
         <div className="flex flex-col items-center text-center gap-4 pt-10">
           <div>
