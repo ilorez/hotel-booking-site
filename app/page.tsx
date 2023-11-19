@@ -4,6 +4,7 @@ import HomePageTopSection from '@/components/global/HomePageTopSection';
 import HomePageHotelSection from '@/components/global/HomePageHotelSection';
 import CafesRestaurantsSection from '@/components/global/CafesRestaurantsSection';
 import ActivitiesSection from '@/components/global/ActivitiesSection';
+import LocationSection from '@/components/global/LocationSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <RoomsSlider />
       <ActivitiesSection />
       <CafesRestaurantsSection />
+      <LocationSection />
     </div>
   );
 }
