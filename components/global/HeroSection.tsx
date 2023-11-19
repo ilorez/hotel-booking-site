@@ -1,5 +1,5 @@
-import React from "react";
-import BookHeroSection from "./BookHeroSection";
+import React from 'react';
+import BookHeroSection from './BookHeroSection';
 
 type Props = {};
 
@@ -7,8 +7,7 @@ function HeroSection({}: Props) {
   return (
     <div
       style={{
-        backgroundImage:
-          'url("http://www.cfmedia.vfmleonardo.com/imageRepo/4/0/64/192/634/FPO_MRK_122_S.jpg")',
+        backgroundImage: 'url("/images/roomBed1.jpg")'
       }}
       className="h-[70vh] relative bg-cover bg-center "
     >
@@ -16,12 +15,12 @@ function HeroSection({}: Props) {
         <div className="container mx-auto flex items-center h-full">
           <div className="flex-1 space-y-3 drop-shadow-xl">
             <h1 className="text-7xl">
-              Welcome to Lebledegre – Your Gateway to Luxury and Comfort!
+              Welcome to Le Bled de Gre – Your Gateway to Luxury and Comfort!
             </h1>
             <h3 className="text-xl">
-              {" "}
-              Book your stay now and elevate your travel experience with
-              Lebledegre. Your journey to luxury begins here.
+              {' '}
+              Book your stay now and elevate your travel experience with Le Bled
+              de Gre. Your journey to luxury begins here.
             </h3>
             <BookHeroSection />
           </div>

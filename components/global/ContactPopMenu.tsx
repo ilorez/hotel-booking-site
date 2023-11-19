@@ -1,11 +1,11 @@
-import React from "react";
-import { ChevronDown } from "lucide-react";
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
 
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+  PopoverTrigger
+} from '@/components/ui/popover';
 
 type Props = {};
 
@@ -16,10 +16,10 @@ export default function ContactPopMenu({}: Props) {
         Contact <ChevronDown />
       </PopoverTrigger>
       <PopoverContent>
-        <ul className="flex flex-col gap-2  [&>li]:cursor-pointer ">
-          <li className="hover:underline ">+212 0000000000</li>
+        <ul className="flex flex-col gap-2  [&>li:hover]:underline [&>li]:cursor-pointer ">
+          <li>+212664722488</li>
           <hr />
-          <li className="hover:underline ">contactus@led.com</li>
+          <li>contact@lebledgre.com</li>
         </ul>
       </PopoverContent>
     </Popover>
