@@ -7,12 +7,23 @@ type Props = {
   title: String;
   desc: String;
   src?: String;
+  isFlexCol?: Boolean;
 };
 
-function SectionsHeader({ src = '', tag, title, desc }: Props) {
+function SectionsHeader({
+  isFlexCol = false,
+  src = '',
+  tag,
+  title,
+  desc
+}: Props) {
   return (
     <div className="container mx-auto pt-12 space-y-4">
-      <div className="flex items-end">
+      <div
+        className={['flex ', isFlexCol ? 'flex-col gap-6' : 'items-end'].join(
+          ' '
+        )}
+      >
         <div className="flex-1 space-y-6">
           <div className=" flex gap-4 items-center">
             <div className="w-[100px] border-y border-black opacity-50"></div>
