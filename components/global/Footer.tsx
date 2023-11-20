@@ -19,7 +19,7 @@ function Footer({}: Props) {
             <span>L</span>ebledegre
           </p>
         </div>
-        <div className="flex justify-between w-full [&>div>ul]:gap-2 [&>div>ul]:flex [&>div>ul]:flex-col [&>div>ul>li:hover]:underline [&>div>ul>li]:cursor-pointer">
+        <div className="flex justify-between w-full [&>div>ul]:gap-2 [&>div>ul]:flex [&>div>ul]:flex-col [&>div>ul>li:hover]:underline [&>div>ul>li]:cursor-pointer pb-6 border-b border-b-gray-500">
           <div>
             <ul>
               <li>Facebook</li>

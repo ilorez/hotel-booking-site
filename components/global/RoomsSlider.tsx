@@ -7,24 +7,33 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import SectionsHeader from './SectionsHeader';
+import Tag from './section/Tag';
+import Title from './section/Title';
+import Desc from './section/Desc';
+import ViewMore from './section/ViewMore';
 
 type Props = {};
 
 const RoomsSlider = (props: Props) => {
   return (
-    <div className="relative  py-10">
-      <div className="absolute bg-[#EEE7DA] w-full h-[60%] z-[-1]"></div>
-      <SectionsHeader
-        tag="The Rooms"
-        title="Le Bled de Gre... An invitation to comfort, elegance and
-      relaxation"
-        desc="Hotel Le Bled de Gre promises a relaxed accommodation experience
+    <div className="relative  py-16 ">
+      <div className="absolute top-0 left-0 bg-[#EEE7DA] w-full h-[60%] z-[-1]"></div>
+      <div
+        className='flex items-end px-16'>
+        <div className="flex-1 space-y-6">
+          <Tag tag="The Rooms"/>
+          <Title title="Le Bled de Gre... An invitation to comfort, elegance and
+      relaxation"/>
+          <Desc desc="Hotel Le Bled de Gre promises a relaxed accommodation experience
       with comfortable, tastefully decorated rooms. All our rooms are
       perfectly equipped to offer you the calm and comfort you need for
-      an unforgettable stay in Marrakech."
-        src="src"
-      />
+      an unforgettable stay in Marrakech." />
+        </div>
+        
+          <ViewMore src={"#"} value={"View Rooms"}/>
+        
+      </div>
+      
       <Swiper
         slidesPerView={2.2}
         onSwiper={(swiper) => console.log(swiper)}
