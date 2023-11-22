@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fonts.josefin_sans.variable} ${fonts.roboto_mono.variable} font-sans `}
+        className={`${fonts.josefin_sans.variable} ${fonts.libre_baskerville.variable} ${fonts.inter.variable} font-sans `}
       >
         <Navbar />
         {children}

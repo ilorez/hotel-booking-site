@@ -1,18 +1,24 @@
-import { Inter, Roboto_Mono, Josefin_Sans } from 'next/font/google';
+import { Inter, Josefin_Sans, Libre_Baskerville } from 'next/font/google';
 
 export const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
+  weight:['400','700'],
+  style:['normal'],
+  display:'swap',
+  subsets:['latin'],
   variable: '--font-inter'
 });
 
-export const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-mono'
+export const libre_baskerville = Libre_Baskerville({
+  weight:['400','700'],
+  style:['normal','italic'],
+  display:'swap',
+  subsets:['latin'],
+  variable: '--font-libre_baskerville'
 });
 export const josefin_sans = Josefin_Sans({
-  weight: '400',
+  weight: ['400','700'],
+  style:['normal','italic'],
+  display:'swap',
   subsets: ['latin'],
   variable: '--font-josefin-sans'
 });
