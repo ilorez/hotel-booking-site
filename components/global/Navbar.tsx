@@ -9,7 +9,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="border-b h-[80px] p-[0.1rem] z-50 bg-[#EEE7DAEE] text-gray-900  fixed w-full top-0 left-0">
+    <div className="border-b h-[80px] p-[0.1rem] z-50 bg-secondary text-gray-900  fixed w-full top-0 left-0">
       <div className="container h-full flex  mx-auto">
         <div className="w-[250px] flex h-full border-x">
           <NavbarSheet />
