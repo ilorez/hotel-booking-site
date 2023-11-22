@@ -14,7 +14,7 @@ function ActivitiesSection({}: Props) {
       <div className='container mx-auto flex'>
 
 
-      <div className="absolute  w-full h-[65%] z-[-1]"></div>
+      <div className="absolute  flex-1 h-[65%] z-[-1]"></div>
       <div className=" pt-12 space-y-4">
       <div
         className='flex flex-col gap-6'>

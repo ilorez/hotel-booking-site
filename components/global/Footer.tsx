@@ -5,7 +5,7 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="w-full flex flex-col items-center py-8">
+    <footer className="w-full flex flex-col items-center py-12">
       <div className="w-[65%] flex flex-col items-center gap-10">
         <div className="flex-1 flex justify-center items-center text-2xl gap-2">
           <Image
