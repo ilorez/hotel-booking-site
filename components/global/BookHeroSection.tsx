@@ -12,7 +12,7 @@ type Props = {};
 
 const BookHeroSection = (props: Props) => {
   return (
-    <div className=" text-foreground p-2 flex gap-2 h-[70px] w-fit bg-[#fff3] ">
+    <div className=" text-foreground p-1 flex gap-1 h-[70px] w-fit bg-[#fff8] ">
       <DatePickerWithRange />
       <Popover>
         <PopoverTrigger asChild>

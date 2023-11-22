@@ -28,8 +28,8 @@ function CafesRestaurantsSection({}: Props) {
           '/images/food1.jpg',
           '/images/food1.jpg'
         ].map((s, i) => (
-          <div className="w-[20vw]">
-            <img src={s} className="w-full aspect-[1/2] object-cover" />
+          <div className="flex-1" key={i}>
+            <img src={s} className="w-full aspect-square object-cover" />
           </div>
         ))}
       </div>

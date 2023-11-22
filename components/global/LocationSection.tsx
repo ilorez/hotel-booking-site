@@ -8,8 +8,8 @@ type Props = {};
 
 function LocationSection({}: Props) {
   return (
-    <section className="flex h-fit w-full justify-between p-10">
-      <div className="bg-gray-700 text-gray-100  w-full">
+    <section className="flex bg-gray-700 h-fit w-full justify-between p-10">
+      <div className=" text-gray-100  w-full container mx-auto">
         <div className="container mx-auto pt-12 space-y-4">
           <div className="flex flex-col gap-6">
             <div className="flex-1 space-y-6">

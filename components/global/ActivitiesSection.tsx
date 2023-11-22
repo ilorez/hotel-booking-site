@@ -4,14 +4,18 @@ import Tag from './section/Tag';
 import Title from './section/Title';
 import Desc from './section/Desc';
 import ViewMore from './section/ViewMore';
+import Image from 'next/image';
 
 type Props = {};
 
 function ActivitiesSection({}: Props) {
   return (
-    <section className="flex">
-      <div className="absolute bg-[#EEE7DA] w-full h-[65%] z-[-1]"></div>
-      <div className="container mx-auto pt-12 space-y-4">
+    <section className="flex bg-[#EEE7DA]">
+      <div className='container mx-auto flex'>
+
+
+      <div className="absolute  flex-1 h-[65%] z-[-1]"></div>
+      <div className=" pt-12 space-y-4">
       <div
         className='flex flex-col gap-6'>
         <div className="flex-1 space-y-6">
@@ -30,8 +34,12 @@ function ActivitiesSection({}: Props) {
           <img
             src="https://images.squarespace-cdn.com/content/v1/5b64999be2ccd16cbfe99bbc/1561726949906-09OSZAETOZ4VLLTXUE7A/IMG_20181127_223509_311.jpg"
             className="w-full"
+            alt=''
+            width={500}
           />
         </div>
+      </div>
+
       </div>
     </section>
   );
