@@ -8,7 +8,7 @@ import LocationSection from '@/components/global/LocationSection';
 
 export default function Home() {
   return (
-    <div className="min-h-[200vh] font-josefin">
+    <div className="min-h-[200vh] font-sans">
       <HeroSection />
       <HomePageTopSection />
       <HomePageHotelSection />

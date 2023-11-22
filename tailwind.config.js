@@ -17,8 +17,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-intet)'],
-        mono: ['var(--font-roboto-mono)'],
+        sans: ['var(--font-josefin-sans)', 'var(--font-libre_baskerville)', 'var(--font-inter)'],
+        inter: ['var(--font-inter)'],
+        libre_baskerville: ['var(--font-libre_baskerville)'],
         josefin: ['var(--font-josefin-sans)']
       },
       colors: {
