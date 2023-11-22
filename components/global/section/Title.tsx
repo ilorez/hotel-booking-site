@@ -6,7 +6,7 @@ type Props = {
 
 function Title({title}: Props) {
   return (
-    <h1 className="text-6xl max-w-4xl ">{title}</h1>
+    <h1 className="text-5xl max-w-4xl ">{title}</h1>
   )
 }
 

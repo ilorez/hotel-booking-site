@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomePageTopSection() {
   return (
-    <section className="w-full flex items-center justify-center text-3xl">
+    <section className="w-full flex items-center justify-center text-xl max-w-4xl mx-auto my-16">
       <div className="flex flex-col items-center gap-6 p-10 [&>p]:text-center max-w-[80vw]">
         <p className="flex flex-col gap-1">
           <span>

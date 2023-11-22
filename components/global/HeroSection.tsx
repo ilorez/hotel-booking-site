@@ -11,7 +11,7 @@ function HeroSection({}: Props) {
       style={{
         backgroundImage: 'url("/images/roomBed1.jpg")'
       }}
-      className="h-[70vh] relative bg-cover bg-center "
+      className="h-[90vh] relative bg-cover bg-center "
     >
       <div className="w-full  text-white h-full bg-[#0006] pt-[80px] ">
         <div className="container mx-auto flex items-center h-full">
@@ -21,10 +21,10 @@ function HeroSection({}: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-7xl">
+              <h1 className="text-6xl max-w-5xl">
                 Welcome to Le Bled de Gre – Your Gateway to Luxury and Comfort!
               </h1>
-              <h3 className="text-xl">
+              <h3 className="text-xl max-w-3xl">
                 {' '}
                 Book your stay now and elevate your travel experience with Le
                 Bled de Gre. Your journey to luxury begins here.
