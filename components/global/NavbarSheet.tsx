@@ -1,9 +1,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
   SheetClose
 } from '@/components/ui/sheet';
@@ -12,6 +9,7 @@ import { X } from 'lucide-react';
 import { Menu } from 'lucide-react';
 import React from 'react';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -35,16 +33,27 @@ function NavbarSheet({}: Props) {
             <X size={64} className="hover:scale-105 hover:text-gray-600" />
           </button>
         </SheetClose>
-        <div className="flex flex-col items-center text-center gap-4 [&>div>ul>li]:cursor-pointer">
+        <div className="flex flex-col items-center text-center gap-4 [&>div>ul>a]:cursor-pointer">
           <div>
             <h2 className="text-2xl my-10 cursor-default">MENU</h2>
           </div>
           <div>
-            <ul className=" flex flex-col gap-6 text-xl [&>li:hover]:underline">
-              <li>Home</li>
-              <li>Our Rooms</li>
-              <li>Contact</li>
-              <li>About us</li>
+            <ul className=" flex flex-col gap-6 text-xl [&>*:hover]:underline">
+              <SheetClose asChild>
+                <Link href={'/'}>Home</Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={'/rooms'}>Our Rooms</Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={'/activities'}>Activities</Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={'/contact'}>Contact</Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={'/about'}>About us</Link>
+              </SheetClose>
             </ul>
           </div>
           <div>
