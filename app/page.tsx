@@ -15,7 +15,9 @@ export default function Home() {
       <RoomsSlider />
       <ActivitiesSection />
       <CafesRestaurantsSection />
-      <LocationSection />
+      <div className="bg-gray-700">
+        <LocationSection />
+      </div>
     </div>
   );
 }
