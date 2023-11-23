@@ -10,7 +10,7 @@ type Props = {};
 
 function ActivitiesSection({}: Props) {
   return (
-    <section className="flex bg-[#EEE7DA]">
+    <section className="flex bg-lightTaupe">
       <div className='container mx-auto flex'>
 
 

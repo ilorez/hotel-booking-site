@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import React from 'react';
+import Logo from './Logo';
 
 type Props = {};
 
@@ -8,13 +8,7 @@ function Footer({}: Props) {
     <footer className="w-full flex flex-col items-center py-20">
       <div className="w-[65%] flex flex-col items-center gap-10">
         <div className="flex-1 flex justify-center items-center text-2xl gap-2">
-          <Image
-            priority
-            src="/icon/logo.svg"
-            height={36}
-            width={36}
-            alt="hotel logo"
-          />
+          <Logo />
           <p>
             <span>L</span>ebledegre
           </p>

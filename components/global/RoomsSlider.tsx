@@ -17,7 +17,7 @@ type Props = {};
 const RoomsSlider = (props: Props) => {
   return (
     <div className="relative  py-16 ">
-      <div className="absolute top-0 left-0 bg-[#EEE7DA] w-full h-[60%] z-[-1]"></div>
+      <div className="absolute top-0 left-0 bg-lightTaupe w-full h-[60%] z-[-1]"></div>
       <div
         className='flex items-end px-16'>
         <div className="flex-1 space-y-6">

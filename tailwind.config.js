@@ -41,6 +41,10 @@ module.exports = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        lightTaupe: {
+          DEFAULT: "hsl(var(--light-taupe))",
+          foreground: "hsl(var(--light-taupe-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
