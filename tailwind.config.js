@@ -14,8 +14,13 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
-    },
+
+    }
+    ,
     extend: {
+      spacing: {
+        nav: 'var(--nav-height)'
+      },
       fontFamily: {
         sans: ['var(--font-josefin-sans)', 'var(--font-libre_baskerville)', 'var(--font-inter)'],
         inter: ['var(--font-inter)'],
@@ -76,6 +81,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+
     },
   },
   plugins: [require("tailwindcss-animate")],

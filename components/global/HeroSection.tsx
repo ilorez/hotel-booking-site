@@ -13,7 +13,7 @@ function HeroSection({}: Props) {
       }}
       className="h-[90vh] relative bg-cover bg-center "
     >
-      <div className="w-full  text-white h-full bg-[#0006] pt-[80px] ">
+      <div className="w-full  text-white h-full bg-[#0006] pt-nav ">
         <div className="container mx-auto flex items-center h-full">
           <div className="flex-1 space-y-3 drop-shadow-xl">
             <motion.div
