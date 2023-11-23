@@ -19,14 +19,14 @@ function NavbarSheet({}: Props) {
       <SheetTrigger asChild>
         <Button
           variant={'outline'}
-          className="w-[80px] bg-transparent h-full border-none"
+          className="w-nav bg-transparent h-full border-none"
         >
           <Menu />
         </Button>
       </SheetTrigger>
       <SheetContent
         side={'left'}
-        className="bg-[#EEE7DA] text-gray-700 w-[400px] sm:w-[540px] flex flex-col items-center justify-center"
+        className="bg-lightTaupe text-gray-700 w-[400px] sm:w-[540px] flex flex-col items-center justify-center"
       >
         <SheetClose asChild>
           <button>
