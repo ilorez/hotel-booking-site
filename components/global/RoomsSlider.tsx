@@ -11,6 +11,7 @@ import Tag from './section/Tag';
 import Title from './section/Title';
 import Desc from './section/Desc';
 import ViewMore from './section/ViewMore';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
@@ -18,22 +19,52 @@ const RoomsSlider = (props: Props) => {
   return (
     <div className="relative  py-16 ">
       <div className="absolute top-0 left-0 bg-lightTaupe w-full h-[60%] z-[-1]"></div>
-      <div
-        className='flex items-end px-16'>
+      <div className="flex items-end px-16">
         <div className="flex-1 space-y-6">
-          <Tag tag="The Rooms"/>
-          <Title title="Le Bled de Gre... An invitation to comfort, elegance and
-      relaxation"/>
-          <Desc desc="Hotel Le Bled de Gre promises a relaxed accommodation experience
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+          >
+            <Tag tag="The Rooms" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+          >
+            <Title
+              title="Le Bled de Gre... An invitation to comfort, elegance and
+      relaxation"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+          >
+            <Desc
+              desc="Hotel Le Bled de Gre promises a relaxed accommodation experience
       with comfortable, tastefully decorated rooms. All our rooms are
       perfectly equipped to offer you the calm and comfort you need for
-      an unforgettable stay in Marrakech." />
+      an unforgettable stay in Marrakech."
+            />
+          </motion.div>
         </div>
-        
-          <ViewMore src={"#"} value={"View Rooms"}/>
-        
+
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
+        >
+          <ViewMore src={'#'} value={'View Rooms'} />
+        </motion.div>
       </div>
-      
+
       <Swiper
         slidesPerView={2.2}
         onSwiper={(swiper) => console.log(swiper)}
