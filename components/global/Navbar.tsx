@@ -1,16 +1,16 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
-import { Menu } from 'lucide-react';
 import NavbarSheet from './NavbarSheet';
 import ContactPopMenu from './ContactPopMenu';
-import Image from 'next/image';
 import Logo from './Logo';
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const [navColors, setNavColors] = useState('transparent');
+  const [navColors, setNavColors] = useState(
+    'text-primary-foreground transparent'
+  );
   const listenScrollEvent = () => {
     window.scrollY > 10
       ? setNavColors('bg-lightTaupe text-lightTaupe-foreground')
@@ -37,13 +37,6 @@ const Navbar = (props: Props) => {
           </div>
         </div>
         <div className="h-full flex-1 flex justify-center items-center text-2xl gap-2">
-          {/* <Image
-            priority
-            src="/icon/logo.svg"
-            height={36}
-            width={36}
-            alt="hotel logo"
-          /> */}
           <Logo />
           <p>
             <span>L</span>ebledegre
