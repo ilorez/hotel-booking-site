@@ -25,6 +25,7 @@ function HomePageTopSection() {
           text={[
             "Marrakech is a touristic destination by excellence An enchanting",
             "imperial city ideal for culture lovers",
+            "History & Discovery",
           ]}
           repeatDelay={60000}
           once
@@ -32,7 +33,7 @@ function HomePageTopSection() {
         <AnimatedText
           el="p"
           text={[
-          "History & Discovery",
+          
           `It is a total escape, with year-round sunshine, breathtaking scenery,`,
           `rich and authentic culture to discover through its restaurants,`,
           `museums and historic sites`
