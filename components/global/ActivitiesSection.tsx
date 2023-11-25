@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 import Tag from './section/Tag';
@@ -5,7 +6,7 @@ import Title from './section/Title';
 import Desc from './section/Desc';
 import ViewMore from './section/ViewMore';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
 type Props = {};
 
 function ActivitiesSection({}: Props) {
@@ -31,12 +32,18 @@ function ActivitiesSection({}: Props) {
       
       <div className="flex gap-2 items-center w-full justify-center">
         <div className="relative top-[20%] w-[40vw]">
-          <img
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+          <img 
             src="https://images.squarespace-cdn.com/content/v1/5b64999be2ccd16cbfe99bbc/1561726949906-09OSZAETOZ4VLLTXUE7A/IMG_20181127_223509_311.jpg"
             className="w-full"
             alt=''
             width={500}
           />
+          </motion.div>
         </div>
       </div>
 
