@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fonts.josefin_sans.variable} ${fonts.libre_baskerville.variable} ${fonts.inter.variable} font-sans `}
+        className={`${fonts.josefin_sans.variable} ${fonts.libre_baskerville.variable} ${fonts.inter.variable} font-sans overflow-x-hidden`}
       >
         <Navbar />
         {children}

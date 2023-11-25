@@ -2,6 +2,7 @@
 import React from 'react';
 import BookHeroSection from './BookHeroSection';
 import { motion } from 'framer-motion';
+import { AnimatedText } from './AnimateText';
 
 type Props = {};
 
@@ -17,23 +18,32 @@ function HeroSection({}: Props) {
         <div className="container mx-auto flex items-center h-full">
           <div className="flex-1 space-y-3 drop-shadow-xl">
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
             >
-              <h1 className="text-6xl max-w-5xl">
-                Welcome to Le Bled de Gre – Your Gateway to Luxury and Comfort!
-              </h1>
-              <h3 className="text-xl max-w-3xl">
-                {' '}
-                Book your stay now and elevate your travel experience with Le
-                Bled de Gre. Your journey to luxury begins here.
-              </h3>
+              <AnimatedText
+                el="h1"
+                text={[
+                  "Welcome to Le Bled de Gre ",
+                  "Your Gateway to Luxury and Comfort!",
+                ]}
+                className="text-5xl "
+                repeatDelay={60000}
+                once
+              />
+              <AnimatedText
+                el="h2"
+                text={[
+                  "Book your stay now and elevate your travel experience with Le",
+                  "Bled de Gre. Your journey to luxury begins here."
+                ]}
+                className="text-xl "
+                repeatDelay={60000}
+                once
+              />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: .5 }}
             >
               <BookHeroSection />
             </motion.div>
