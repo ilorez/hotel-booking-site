@@ -9,23 +9,49 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const [navColors, setNavColors] = useState(
-    'text-primary-foreground transparent'
+  'text-primary-foreground transparent h-[90px]'
   );
-  const listenScrollEvent = () => {
-    window.scrollY > 10
-      ? setNavColors('bg-lightTaupe text-lightTaupe-foreground')
-      : setNavColors('text-primary-foreground transparent');
-  };
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    return () => {
-      window.removeEventListener('scroll', listenScrollEvent);
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrolledDown = prevScrollPos < currentScrollPos;
+
+      setPrevScrollPos(currentScrollPos);
+
+      // Show the navbar if scrolling up or at the top
+
+      if(window.scrollY > 10){
+        if(!isScrolledDown || currentScrollPos <= 0){
+           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl')
+        }else{
+           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl translate-y-[-90px]')
+        }
+      }else{
+           setNavColors('text-primary-foreground transparent h-[90px]');
+      }
+        
+
+
     };
-  }, []);
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
+
+
+
   return (
     <div
       className={[
-        'border-b h-nav z-50 fixed w-full top-0 left-0 transition-all',
+          'border-b duration-300 z-50 fixed w-full top-0 left-0 transition-all ',
         navColors
       ].join(' ')}
     >
