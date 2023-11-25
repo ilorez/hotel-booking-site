@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
   return (
     <div
       className={[
-        'border-b h-nav p-[0.1rem] z-50 fixed w-full top-0 left-0 transition-all',
+        'border-b h-nav z-50 fixed w-full top-0 left-0 transition-all',
         navColors
       ].join(' ')}
     >
