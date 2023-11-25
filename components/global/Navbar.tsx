@@ -26,7 +26,7 @@ const Navbar = (props: Props) => {
 
       if(window.scrollY > 10){
         if(!isScrolledDown || currentScrollPos <= 0){
-           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl')
+           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-2xl border-b')
         }else{
            setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl translate-y-[-90px]')
         }
