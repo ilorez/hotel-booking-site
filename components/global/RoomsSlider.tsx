@@ -25,7 +25,7 @@ const RoomsSlider = (props: Props) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             <Tag tag="The Rooms" />
           </motion.div>
@@ -33,7 +33,7 @@ const RoomsSlider = (props: Props) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             <Title
               title="Le Bled de Gre... An invitation to comfort, elegance and
@@ -44,7 +44,7 @@ const RoomsSlider = (props: Props) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             <Desc
               desc="Hotel Le Bled de Gre promises a relaxed accommodation experience
@@ -59,7 +59,7 @@ const RoomsSlider = (props: Props) => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1 }}
         >
           <ViewMore src={'#'} value={'View Rooms'} />
         </motion.div>
@@ -68,8 +68,8 @@ const RoomsSlider = (props: Props) => {
       <Swiper
         slidesPerView={2.2}
         onSwiper={(swiper) => console.log(swiper)}
-        spaceBetween={40}
-        className="px-20 py-8 mt-8"
+        spaceBetween={0}
+        className=" py-8 mt-8"
       >
         {[
           '/images/room1.jpg',
@@ -78,7 +78,7 @@ const RoomsSlider = (props: Props) => {
           '/images/room4.jpg'
         ].map((room, i) => (
           <SwiperSlide
-            className={(i == 0 ? 'ml-20' : ' ') + ' py-10'}
+            className={(i == 0 ? '' : ' ') + 'px-6 py-10'}
             key={room}
           >
             <div className="cursor-pointer hover:-translate-y-4 duration-300">

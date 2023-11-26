@@ -39,7 +39,7 @@ function ActivitiesSection({}: Props) {
           >
           <img 
             src="https://images.squarespace-cdn.com/content/v1/5b64999be2ccd16cbfe99bbc/1561726949906-09OSZAETOZ4VLLTXUE7A/IMG_20181127_223509_311.jpg"
-            className="w-full"
+            className="w-full shadow-3xl"
             alt=''
             width={500}
           />

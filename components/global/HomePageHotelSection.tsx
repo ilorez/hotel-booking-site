@@ -52,19 +52,19 @@ function HomePageHotelSection({}: Props) {
         </div>
       </div>
       <div>
-        <div className="relative h-full max-h-[800px]">
+        <div className="relative h-full flex-1 py-8">
           <img
             src="/images/pesine1.jpg"
             alt=""
             width={350}
-            className="absolute bottom-[-30%] right-[-2rem]"
+            className="absolute bottom-[-30%] right-[-2rem] shadow-2xl"
           />
 
           <img
             src="/images/greenView2.jpg"
             alt=""
             width={500}
-            className="relative z-1 top-16 w-[50vw]"
+            className="relative z-1 top-16 w-[50vw] shadow-2xl"
           />
         </div>
       </div>

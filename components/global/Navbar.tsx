@@ -9,7 +9,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const [navColors, setNavColors] = useState(
-  'text-primary-foreground transparent h-[90px]'
+  'text-primary-foreground transparent h-[80px]'
   );
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -28,10 +28,10 @@ const Navbar = (props: Props) => {
         if(!isScrolledDown || currentScrollPos <= 0){
            setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-2xl border-b')
         }else{
-           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl translate-y-[-90px]')
+           setNavColors('bg-white text-lightTaupe-foreground h-nav drop-shadow-xl translate-y-[-80px]')
         }
       }else{
-           setNavColors('text-primary-foreground transparent h-[90px]');
+           setNavColors('text-primary-foreground transparent h-[80px]');
       }
         
 
